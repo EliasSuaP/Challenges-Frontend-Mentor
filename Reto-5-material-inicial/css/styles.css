@@ -1,0 +1,127 @@
+/*
+Colores
+  dark-purple: hsl(300, 43%, 22%)
+  pink:hsl(333, 80%, 67%)
+  purple: hsl(303, 10%, 53%)
+  soft-white: hsl(300, 24%, 96%)
+  background-color: hsl(0, 0%, 90%);
+
+Fuente de la página
+  https://fonts.google.com/specimen/Karla
+  Estilos 200 y 400
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1400px; /* width y margin en el body para centrar todos los contenidos */
+  margin: 6em 10em;
+  background-color: hsl(0, 0%, 90%);
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute; /* para que las imágenes pasen a ser el fondo */
+  z-index: -1; /* Indica la posición en que se encuentra el elemento en las capas de la página web */
+}
+
+.bg-image--top {
+  top: 0;
+  left: 0; /*Para colocar el bg en la posicion derecha arriba*/
+  width: 400px;
+}
+
+.bg-image--bottom {
+  bottom: 0;
+  right: 0;
+  width: 700px;
+}
+
+.header,
+.aside {
+  display: inline-block; /* Para posicionar el reviews en bloque, se le debe indicar al segundo elemento la misma sentencia*/
+  width: 450px;
+}
+
+.header {
+  margin-right: 350px;
+  margin-bottom: 5em;
+}
+
+.main__title {
+  font-size: 3rem;
+  color: hsl(300, 43%, 22%);
+}
+
+.rate {
+  position: relative;
+  margin-bottom: 1em;/* Para que se separen unos con otros */
+  padding: 0 2em; /* 0 vertical 2 en los lados para crear un espaciado */
+  border-radius: 10px;
+  line-height: 5; /* Para lograr el espaciado arriba y abajo */
+  background-color: hsl(300, 24%, 96%);
+}
+
+.rate__text {
+  margin-left: 1em;/* para separar el texto de las estrellas */
+}
+
+.rate__star {
+  vertical-align: middle; /* Esto se hace para alinear las estrellas con el texto
+  Solo funciona si tienes elementos de linea(SPAN), en elementos de bloque no funciona */
+  margin-right: 0.5em;
+}
+
+.rate--first { /* rate--first y rate--second son clases puestas exclusivamente para mover en forma de escaleras los rates */
+  left: -75px;
+}
+
+.rate--second {
+  left: -50px;
+}
+
+.testimonial {
+  position: relative;
+  display: inline-block; /* inline block + width para colocar una al lado de la otra */
+  width: 350px;
+  margin-right: 50px; /* Para separarlas entre si */
+  padding: 2em 2.5em; 
+  border-radius: 10px;
+  color: hsl(300, 24%, 96%);
+  background-color: hsl(300, 43%, 22%);
+}
+
+.testimonial--second{
+  top: 50px;
+}
+
+.testimonial--third {
+  top: 75px;
+}
+
+.user {
+  width: 250px; /* Este es el div contiene la imágen y el texto */
+}
+
+.user__image {
+  border-radius: 50%;
+  max-width: 25%; /* Para que la imagen no sea demasiado grande */
+}
+
+.user__image,
+.user__info{
+  display: inline-block;/* No me funciona ctm!!!! */ 
+  vertical-align: middle;/* Tenía un error en el html, cerré un div en el lugar equivocado */
+}
+
+.user__name,
+.user__category{
+  margin: .5em 1em;
+}
+
+.user__category{
+  color: hsl(333, 80%, 67%);
+}
+
