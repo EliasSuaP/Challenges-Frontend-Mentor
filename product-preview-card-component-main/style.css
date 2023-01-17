@@ -1,0 +1,113 @@
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: 440px;
+    height: 350px;
+    margin: 0 auto;
+    top: 30vh;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__image {
+    position: absolute;
+    align-items: left;
+    width: 225px;
+    height: 350px;
+}
+
+.text {
+    margin-left: 55%;
+    margin-right: 10px;
+    margin-top: 1.5rem;
+}
+
+.card__text--fraunces {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+}
+
+.card__title {
+    font-variant: small-caps;
+    font-size: smaller;
+    letter-spacing: 2px;
+}
+
+.card__text--light {
+    color: hsl(228, 12%, 48%);
+}
+
+.card__name {
+    font-size: 25px;
+    margin-top: 1rem;
+    font-variant: small-caps;
+}
+
+.card__parrafo {
+    font-size: x-small;
+    margin-top: 1rem;
+    line-height: 1rem;
+}
+
+.card__darkcyan {
+    color: hsl(158, 36%, 37%);
+}
+
+.price {
+    display: inline;
+    text-align: left;    
+}
+
+.card__price {
+    display: inline;
+    font-weight: bold;
+
+}
+
+.card__price--light {
+    color: hsl(228, 12%, 48%);
+    font-size: xx-small;
+    text-decoration: line-through;
+    display: inline;
+}
+
+.card__button {
+    text-align: right;
+    margin-right: 10px;
+    margin-left: 112px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px
+}
+
+button {
+    color: white;
+    background-color:hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    cursor: pointer;
+    font-size: smaller;
+}
+
+.carrito {
+    width: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
