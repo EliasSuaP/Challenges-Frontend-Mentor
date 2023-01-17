@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: 1440px;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+
+.card {
+    position: relative;
+    top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 580px;
+    background-color: hsl(225, 100%, 98%);
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.header-image{
+    width: 400px;
+}
+
+.card__body{
+    padding: 2em;
+}
+
+.card__title{
+    margin-top: 5px;
+}
+
+.text-grey{
+    color: hsl(224, 23%, 55%);
+}
+
+.card__price{
+    position: relative;
+    background-color: hsla(225, 100%, 94%, 0.400);
+    width: 340px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.box__left,
+.box__right,
+.musical-note{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-plan,
+.price{
+    margin: .5em 1em;
+}
+
+.change:hover{
+    color: hsl(248, 35%, 53%);
+}
+
+.button{
+    position: relative;
+    top: 30px;
+    margin: 0 5px;
+    padding: 0.7em 5.5em;
+    background-color: hsl(245, 75%, 52%);  
+    text-decoration: none;
+    color: hsl(225, 100%, 94%);
+    border-radius: 10px;
+    box-shadow: 3px 20px 5px ;
+}
+
+.button:hover{
+    background-color: hsl(248, 35%, 53%);
+}
+
+.cancel{
+    position: relative;
+    top: 70px;
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.text-blue{
+    color: hsl(223, 47%, 23%);
+}
+
+.text-dblue{
+    color: hsl(224, 23%, 55%);
+}
