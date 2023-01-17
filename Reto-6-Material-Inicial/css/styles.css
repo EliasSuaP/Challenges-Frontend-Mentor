@@ -1,0 +1,125 @@
+/*
+Colores
+  purple: hsl(263, 55%, 52%)
+  grey: hsl(217, 19%, 35%)
+  dark-blue: hsl(219, 29%, 14%)
+
+Fuente de la página
+  https://fonts.google.com/specimen/Barlow+Semi+Condensed
+  Estilos 500 y 600
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed",sans-serif;
+  background-color: #333;
+  font-size: 500;
+}
+
+.grid-container{
+  position: relative;/* Por que necesitamos poner las tarjetas respecto a él */
+  width: 1400px; /* Con width y margin tenemos centrado todo respecto a la web */
+  margin: 3rem auto;
+}
+
+.card {
+  position: relative;/* Para que las comillas pasen atras de la tarjeta */
+  display: inline-block; /* para que se coloque una al lado de la otra */
+  height: 400px;
+  vertical-align: top;/* Para alinear todas las imágenes en la parte de arriba */
+  margin-right: 1.5em;/* Para separarlas entre si */
+  padding: 2em; /* Para darle espacio interior */
+  line-height: 1.5;/* Para que las lineas esten un poco separadas entre si */
+  border-radius: 1em;
+}
+
+.card__quotes{
+  position: absolute;/* Para que la imagen de comillas no ocupe espacio */
+  top: 4em;
+  right: 10em;
+}
+
+.card__title {
+  position: relative;/*Posicionamos el titulo para que las comillas pasen atras de el */
+}
+
+.card__text {
+  opacity: 0.7;
+}
+
+.card--first{
+  width: 675px;
+}
+
+.card--second {
+  width: 350px;
+}
+
+.card--third {
+  width: 300px;
+  margin-right: 0;/* Le quitamos el margin para que la tercera tarjeta pase de abajo a estar al lado de la segunda en linea */
+  height: 825px; /* Se modifica la altura para que quepa el texto */
+}
+
+.card--fourth,
+.card--fifth {
+  position: absolute;/* Se rompe todo pero hay que colocarlas */
+  top: 425px;
+}
+
+.card--fourth {/* Posicionamos la cuarta tarjeta */
+  left: 0;
+  width: 325px;
+}
+
+.card--fifth { /* Posicionamos la quinta */
+  left: 355px;
+  width: 700px;
+}
+
+.card--purple,
+.card--grey,
+.card--black{
+  color: #fff;
+}
+
+.card--purple{
+  background-color: hsl(263, 55%, 52%);
+}
+
+.card--grey {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.card--black {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.card--white {
+  background-color: #fff;
+  color: #333;
+}
+
+.user{
+  width: 250px;
+}
+
+.user__image {
+  border-radius: 50%;
+  max-width: 25%;
+}
+
+.user__image,
+.user__info {
+  display: inline-block; /* Posicionamos nombre y categoria al lado de la imagen de perfil */
+  vertical-align: middle;
+}
+
+.user__name,
+.user__category {
+  margin: 0.5em 1em;
+  opacity: .5;
+}
