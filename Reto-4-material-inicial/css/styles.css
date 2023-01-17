@@ -1,0 +1,117 @@
+/*
+Colores
+  cyan: hsl(179, 62%, 43%)
+  lime: hsl(71, 73%, 54%)
+  grey: hsl(204, 43%, 93%)
+  light-blue: hsl(218, 22%, 67%)
+
+Fuente de la página
+  https://fonts.google.com/specimen/Karla
+  Estilos 200 y 400
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #333;
+}
+
+.container__top,
+.container__left,
+.container__right{
+  padding: 1em 2em;
+}
+
+.container{
+  position: relative; /* para poder colocar todo respecto al contenedor */
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto; /* Con esto tenemos todo el contenedor general en el centro */
+  background: #fff;
+}
+
+.container__top {
+  height: 230px;
+  /* padding: 1em 2em; *//* Tenemos la separación de la tarjeta de top */
+}
+
+.container__left, 
+.container__right {
+  position: absolute;/* Para que se ubique en relación al contenedor general de la tarjeta */
+  top: 230px;/* = a la altura del contenedor top, así se ubica justo debajo. */
+  width: 50%;/* Para que ocupen el mismo lugar left y right */
+  height: 250px;
+  /* padding: 1em 2em; */
+}
+
+.container__left{
+  left: 0; /* texto ubicamos a la izquierda respetará el padding*/
+  background-color: hsl(179, 62%, 43%);
+}
+
+.container__right{
+  right: 0; /* texto ubicamos a la derecha respetará el padding*/
+  background-color: hsl(179 62% 43% / 0.8);
+}
+
+.text-white {
+  color: white;/* Este mismo color se puede poner en el body */
+}
+
+.text-cyan {
+  color: hsl(179, 62%, 43%);
+}
+
+.text-lime {
+  color: hsl(71, 73%, 54%);
+}
+
+.text-light-blue{
+  color: hsl(218, 22%, 67%);
+}
+
+.text-transparent {
+  color: hsl(0 0% 100% / 0.5);
+}
+
+.text-extra-big {
+  font-size: 2.5rem;
+}
+
+.text-big {
+  font-size: 2rem;
+}
+
+.text-medium {
+  font-size: 1.5rem;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.list {
+  padding-left: 0;/* ubica la lista a izquierda alineada con el texto */
+  list-style: none;/* Quita los puntos de la lista */
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.53);
+}
+
+/* .list__item {
+  font-weight: 200;/* se agregó el mismo estilo en el contenedor padre=list 
+}*/
+
+.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;/* Con esta medida el elemento se logra centrar */
+  border-radius: 5px;
+  padding: 0.5em;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 0.1);
+}
